@@ -1,5 +1,5 @@
 {
-  "name": "ventedsea",
+  "name": "code-sorter",
   "displayName": "code-sorter",
   "description": "Sort selected code by length.",
   "version": "0.0.1",
@@ -9,13 +9,15 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:extension.sortByLength"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "ventedsea.helloWorld",
-        "title": "Hello World"
+        "command": "extension.sortByLength",
+        "title": "Sort by String Length"
       }
     ]
   },
