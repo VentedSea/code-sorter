@@ -1,8 +1,13 @@
 {
-  "name": "code-sorter",
-  "displayName": "code-sorter",
-  "description": "Sort selected code by length or alphabetically.",
+  "name": "line-sorter",
+  "displayName": "Line Sorter",
+  "description": "Sort selected lines by length or alphabetically.",
   "version": "0.0.2",
+  "publisher": "ventedsea",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VentedSea/line-sorter.git"
+  },
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -30,9 +35,9 @@
       ]
     },
     "configuration": {
-      "title": "Code Sorter",
+      "title": "Line Sorter",
       "properties": {
-        "codeSorter.sortMethod": {
+        "lineSorter.sortMethod": {
           "type": "string",
           "default": "length",
           "enum": ["length", "alphabetical"],
