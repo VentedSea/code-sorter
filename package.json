@@ -19,7 +19,16 @@
         "command": "extension.sortByLength",
         "title": "Sort by String Length"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "extension.sortByLength",
+          "group": "1_modification"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
