@@ -1,8 +1,8 @@
 {
   "name": "code-sorter",
   "displayName": "code-sorter",
-  "description": "Sort selected code by length.",
-  "version": "0.0.1",
+  "description": "Sort selected code by length or alphabetically.",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -10,24 +10,39 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sortByLength"
+    "onCommand:extension.sortLines"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.sortByLength",
-        "title": "Sort by String Length"
+        "command": "extension.sortLines",
+        "title": "Sort Lines"
       }
     ],
     "menus": {
       "editor/context": [
         {
           "when": "editorHasSelection",
-          "command": "extension.sortByLength",
+          "command": "extension.sortLines",
           "group": "1_modification"
         }
       ]
+    },
+    "configuration": {
+      "title": "Code Sorter",
+      "properties": {
+        "codeSorter.sortMethod": {
+          "type": "string",
+          "default": "length",
+          "enum": ["length", "alphabetical"],
+          "enumDescriptions": [
+            "Sort lines by length",
+            "Sort lines alphabetically"
+          ],
+          "description": "Choose the method for sorting lines"
+        }
+      }
     }
   },
   "scripts": {
