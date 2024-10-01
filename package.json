@@ -4,6 +4,7 @@
   "description": "Sort selected lines by length or alphabetically.",
   "version": "0.0.2",
   "publisher": "ventedsea",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/VentedSea/line-sorter.git"

@@ -38,6 +38,10 @@ There are no known issues at this time. If you encounter any problems, please re
 
 Initial release of Line Sorter.
 
+## LICENSE
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ---
 
 Enjoy sorting your lines with Line Sorter!
